@@ -1,332 +1,601 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Ledgr — Offline Finance Manager by Ashfaq Ali Zardari Store. Track credit/debit transactions, manage multiple accounts, export to Excel, CSV & PDF." />
-<title>Ledgr — Offline Finance Manager | Ashfaq Ali Zardari Store</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css" />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231A73E8'/><text x='50' y='68' font-size='58' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>L</text></svg>" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ===== PRIMARY META TAGS ===== -->
+  <title>Ledgr — Offline Finance Manager for Shops & Businesses | Ashfaq Ali Zardari Store</title>
+  <meta name="description"
+    content="Ledgr is a free, offline finance ledger for shops and small businesses. Track credit/debit transactions, manage multiple accounts, and export to Excel, CSV & PDF. No ads, no signup, 100% private." />
+  <meta name="keywords"
+    content="ledger app, offline finance app, finance manager, business ledger, credit debit tracker, accounting app Pakistan, expense tracker, bookkeeping app, excel export finance, urdu finance app, shop ledger, ledgr app" />
+  <meta name="author" content="Ashfaq Ali Zardari Store" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="rating" content="general" />
+  <meta name="theme-color" content="#1A73E8" />
+  <meta name="msapplication-TileColor" content="#1A73E8" />
+
+  <!-- ===== CANONICAL URL ===== -->
+  <link rel="canonical" href="https://ashfaqalizardaristore.co/" />
+
+  <!-- ===== OPEN GRAPH (Facebook, WhatsApp, LinkedIn) ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ledgr — by Ashfaq Ali Zardari Store" />
+  <meta property="og:title" content="Ledgr — Offline Finance Manager for Shops & Businesses" />
+  <meta property="og:description"
+    content="Free offline ledger app. Track credit/debit, manage accounts, export to Excel, CSV & PDF. No ads, no signup, 100% private." />
+  <meta property="og:url" content="https://ashfaqalizardaristoreinc.github.io/Ledgr/" />
+  <meta property="og:image"
+    content="https://ashfaqalizardaristoreinc.github.io/Ledgr/images/ledgr featured graphic 1024 px by 500 px.jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Ledgr — Offline Finance Manager" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ur_PK" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ashfaqzardari" />
+  <meta name="twitter:creator" content="@ashfaqzardari" />
+  <meta name="twitter:title" content="Ledgr — Offline Finance Manager for Shops & Businesses" />
+  <meta name="twitter:description"
+    content="Free offline ledger. Track credit/debit, manage accounts, export to Excel, CSV & PDF. No ads, no signup." />
+  <meta name="twitter:image"
+    content="https://ashfaqalizardaristoreinc.github.io/Ledgr/images/ledgr featured graphic 1024 px by 500 px.jpeg" />
+  <meta name="twitter:image:alt" content="Ledgr Finance App Preview" />
+
+  <!-- ===== MOBILE / APP LINKS ===== -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Ledgr" />
+  <meta name="application-name" content="Ledgr" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <!-- ===== FAVICONS ===== -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/ledgr app_icon.jpeg" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/ledgr app_icon.jpeg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/ledgr app_icon.jpeg" />
+  <link rel="mask-icon" href="./images/ledgr app_icon.jpeg" color="#1A73E8" />
+  <link rel="manifest" href="./manifest.json" />
+
+  <!-- ===== FONTS & STYLES ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ===== JSON-LD STRUCTURED DATA ===== -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ashfaqalizardaristore.co/#organization",
+      "name": "Ashfaq Ali Zardari Store",
+      "url": "https://ashfaqalizardaristore.co",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ashfaqalizardaristoreinc.github.io/Ledgr/images/ledgr app_icon.jpeg",
+        "width": 512,
+        "height": 512
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92-330-8060604",
+        "contactType": "Customer Support",
+        "email": "info@ashfaqalizardaristore.co",
+        "areaServed": "PK",
+        "availableLanguage": ["English", "Urdu", "Arabic"]
+      },
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=io.github.ashfaqalizardaristoreinc.ledgr"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PK",
+        "addressLocality": "Pakistan"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ashfaqalizardaristoreinc.github.io/Ledgr/#website",
+      "url": "https://ashfaqalizardaristoreinc.github.io/Ledgr/",
+      "name": "Ledgr — Offline Finance Manager",
+      "publisher": { "@id": "https://ashfaqalizardaristore.co/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://ashfaqalizardaristore.co/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://ashfaqalizardaristoreinc.github.io/Ledgr/",
+      "name": "Ledgr: Offline Finance Ledger",
+      "operatingSystem": "Android 6.0+",
+      "applicationCategory": "FinanceApplication",
+      "applicationSubCategory": "Accounting",
+      "operatingSystem": "Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "PKR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "1"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=io.github.ashfaqalizardaristoreinc.ledgr",
+      "installUrl": "https://play.google.com/store/apps/details?id=io.github.ashfaqalizardaristoreinc.ledgr",
+      "fileSize": "15MB",
+      "softwareVersion": "1.0.0",
+      "datePublished": "2025-01-01",
+      "screenshot": [
+        "https://ashfaqalizardaristoreinc.github.io/Ledgr/images/2_Home.jpeg",
+        "https://ashfaqalizardaristoreinc.github.io/Ledgr/images/3_Accounts.jpeg",
+        "https://ashfaqalizardaristoreinc.github.io/Ledgr/images/4_Transactions.jpeg"
+      ],
+      "author": { "@id": "https://ashfaqalizardaristore.co/#organization" },
+      "publisher": { "@id": "https://ashfaqalizardaristore.co/#organization" },
+      "description": "Free offline finance ledger app for shops and small businesses. Track credit/debit transactions, manage multiple accounts, and export to Excel, CSV & PDF.",
+      "featureList": [
+        "Unlimited accounts for people, organizations and companies",
+        "Balance before and after every transaction",
+        "Income, Expense and Transfer modes",
+        "Export to Excel, CSV, and PDF",
+        "Account-wise credit and debit totals",
+        "Advanced filters: date range, amount range, search",
+        "Light, Dark and System themes",
+        "English, Urdu and Arabic languages",
+        "100% offline, no ads, no signup"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ashfaqalizardaristore.co/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Ledgr really free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Ledgr is completely free to download and use. If you'd like to support development, you can buy us a coffee from inside the app."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data synced to the cloud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Ledgr is fully offline. Your data stays on your device and is never uploaded anywhere. You can export it as Excel, CSV, or PDF whenever you want."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I backup my data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open Settings → Export to save statements as CSV, Excel, or PDF. Keep the file safe — you can re-import it manually if needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does balance before / after mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every entry stores your account balance the instant before and after that transaction. This creates a full audit trail so you can trace any discrepancy back to its source."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it support transfers between accounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — just like Easypaisa, JazzCash, or a bank transfer. The source account is debited and the destination account is credited in one atomic transaction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which languages are supported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "English, Urdu (اردو), and Arabic (العربية), with full right-to-left layout support."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it on multiple devices?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ledgr stores data locally, so each device has its own independent database. To transfer data, use the export feature."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I report a bug or request a feature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Email us at info@ashfaqalizardaristore.co or call +92 330 8060604. We read every message."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Ledgr",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Android",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PKR" },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "1",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ashfaqalizardaristore.co/"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
+
 <body>
 
-<!-- ============ NAVBAR ============ -->
-<header class="nav-wrap">
-  <nav class="nav container">
-    <a href="index.html" class="brand">
-      <span class="brand-logo">L</span>
-      <span class="brand-text">
-        <strong>Ledgr</strong>
-        <small>by Ashfaq Ali Zardari Store</small>
-      </span>
-    </a>
-
-    <button class="menu-btn" aria-label="Menu" id="menuBtn">
-      <span></span><span></span><span></span>
-    </button>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="features.html">Features</a></li>
-      <li><a href="screenshots.html">Screenshots</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="support.html">Support</a></li>
-      <li><a href="download.html" class="btn-nav">Download</a></li>
-      <li>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0-16a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1Zm0 18a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1ZM2 12a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm18 0a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1ZM4.9 4.9a1 1 0 0 1 1.4 0L7.8 6.4a1 1 0 1 1-1.4 1.4L4.9 6.3a1 1 0 0 1 0-1.4Zm11.3 11.3a1 1 0 0 1 1.4 0l1.5 1.5a1 1 0 1 1-1.4 1.4l-1.5-1.5a1 1 0 0 1 0-1.4Zm2.9-11.3a1 1 0 0 1 0 1.4L17.6 7.8a1 1 0 1 1-1.4-1.4l1.5-1.5a1 1 0 0 1 1.4 0ZM6.4 16.2a1 1 0 0 1 0 1.4l-1.5 1.5a1 1 0 0 1-1.4-1.4l1.5-1.5a1 1 0 0 1 1.4 0Z"/></svg>
-        </button>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="blob blob-a"></div>
-  <div class="blob blob-b"></div>
-  <div class="blob blob-c"></div>
-
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <span class="pill">
-        <span class="dot"></span>
-        Available on Google Play
-      </span>
-      <h1>
-        Offline finance management,
-        <span class="grad-text">reimagined.</span>
-      </h1>
-      <p class="lede">
-        Ledgr is a fast, private, and beautifully designed finance ledger for individuals,
-        shops, and businesses. Track credits and debits across multiple accounts — with
-        automatic running balance, transfer support, and one-tap export to Excel, CSV, or PDF.
-      </p>
-
-      <div class="hero-cta">
-        <a href="download.html" class="btn btn-primary">
-          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M3 20.5v-17c0-.6.4-1 1-1 .2 0 .4.1.5.2l14.7 8.5c.5.3.7.9.4 1.4-.1.2-.2.3-.4.4L4.5 21.3c-.5.3-1.1.1-1.4-.4-.1-.1-.1-.3-.1-.4Zm2-14.7v12.4L16.2 12 5 5.8Z"/></svg>
-          Download for Android
-        </a>
-        <a href="features.html" class="btn btn-ghost">Explore Features →</a>
-      </div>
-
-      <div class="hero-stats">
-        <div><strong>100%</strong><span>Offline</span></div>
-        <div><strong>3+</strong><span>Export formats</span></div>
-        <div><strong>∞</strong><span>Accounts</span></div>
-        <div><strong>0</strong><span>Ads & trackers</span></div>
-      </div>
-    </div>
-
-    <div class="hero-visual">
-      <div class="phone">
-        <div class="phone-notch"></div>
-        <div class="phone-screen">
-          <div class="mock-header">
-            <span>Welcome back</span>
-            <strong>My Store</strong>
-          </div>
-          <div class="mock-card">
-            <small>Main Account</small>
-            <strong>Rs 145,250.00</strong>
-            <div class="mock-bar"><span></span></div>
-            <div class="mock-mini">
-              <div><span class="up">▲</span> Credit</div>
-              <div><span class="down">▼</span> Debit</div>
-            </div>
-          </div>
-          <div class="mock-txn credit">
-            <div class="ico">↓</div>
-            <div>
-              <strong>Sale – Counter 1</strong>
-              <small>Today · 1 entry</small>
-            </div>
-            <span>+ Rs 5,000</span>
-          </div>
-          <div class="mock-txn debit">
-            <div class="ico">↑</div>
-            <div>
-              <strong>Supplier Payment</strong>
-              <small>Yesterday · 2 entries</small>
-            </div>
-            <span>− Rs 12,400</span>
-          </div>
-          <div class="mock-txn transfer">
-            <div class="ico">⇄</div>
-            <div>
-              <strong>Transfer → JazzCash</strong>
-              <small>2 days ago</small>
-            </div>
-            <span>Rs 8,000</span>
-          </div>
-        </div>
-      </div>
-      <div class="float-card fc-1">
-        <span class="fc-icon">📊</span>
-        <div>
-          <strong>Monthly report</strong>
-          <small>Auto-generated</small>
-        </div>
-      </div>
-      <div class="float-card fc-2">
-        <span class="fc-icon">🔒</span>
-        <div>
-          <strong>Private by design</strong>
-          <small>Nothing leaves your device</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TRUST BAR ============ -->
-<section class="trust">
-  <div class="container">
-    <p class="trust-label">Trusted by shopkeepers, freelancers, and small businesses</p>
-    <div class="trust-logos">
-      <span>◆ Shops</span>
-      <span>◆ Freelancers</span>
-      <span>◆ Retailers</span>
-      <span>◆ Wholesalers</span>
-      <span>◆ Families</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FEATURES ============ -->
-<section class="section" id="features">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Features</span>
-      <h2>Everything you need to run a clean ledger</h2>
-      <p>Purpose-built for real-world bookkeeping — no clutter, no learning curve.</p>
-    </div>
-
-    <div class="feature-grid">
-      <article class="f-card">
-        <div class="f-icon" style="background:linear-gradient(135deg,#1A73E8,#7C4DFF)">👥</div>
-        <h3>Unlimited Accounts</h3>
-        <p>Create accounts for people, organizations, or companies. Manage them with full edit, archive, and delete control.</p>
-      </article>
-
-      <article class="f-card">
-        <div class="f-icon" style="background:linear-gradient(135deg,#34A853,#00C853)">📈</div>
-        <h3>Running Balance</h3>
-        <p>Every entry stores the balance before and after. Trace any discrepancy in seconds.</p>
-      </article>
-
-      <article class="f-card">
-        <div class="f-icon" style="background:linear-gradient(135deg,#EA4335,#FF6D00)">⇄</div>
-        <h3>Transfers Between Accounts</h3>
-        <p>Move money like Easypaisa or JazzCash — one debit, one credit, atomic and accurate.</p>
-      </article>
-
-      <article class="f-card">
-        <div class="f-icon" style="background:linear-gradient(135deg,#00B8D4,#00E5FF)">📄</div>
-        <h3>Excel, CSV & PDF Export</h3>
-        <p>Generate statements and reports in one tap. Share via WhatsApp, email, or save to device.</p>
-      </article>
-
-      <article class="f-card">
-        <div class="f-icon" style="background:linear-gradient(135deg,#7C4DFF,#E040FB)">🔒</div>
-        <h3>Local & Private</h3>
-        <p>No cloud, no signup, no tracking. Your financial data never leaves your device.</p>
-      </article>
-
-      <article class="f-card">
-        <div class="f-icon" style="background:linear-gradient(135deg,#F57F17,#FFC107)">🎨</div>
-        <h3>Multi-Language & Themes</h3>
-        <p>English, اردو, العربية. Light, dark, or system — the app adapts to you.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SCREENSHOTS PREVIEW ============ -->
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Preview</span>
-      <h2>A UI you'll actually enjoy using</h2>
-      <p>Modern, uncluttered, and built for quick data entry.</p>
-    </div>
-
-    <div class="shots">
-      <div class="shot"><div class="shot-inner mock-1">Dashboard</div></div>
-      <div class="shot shot-center"><div class="shot-inner mock-2">New Transaction</div></div>
-      <div class="shot"><div class="shot-inner mock-3">Reports</div></div>
-    </div>
-
-    <div class="center-cta">
-      <a href="screenshots.html" class="btn btn-ghost">View all screenshots →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SERVICES ============ -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Services</span>
-      <h2>Built by a store, for stores</h2>
-      <p>Beyond the app — we help you get your bookkeeping in order.</p>
-    </div>
-
-    <div class="service-grid">
-      <div class="s-card">
-        <h3>Custom App Development</h3>
-        <p>Flutter apps for your business — POS, inventory, ledgers, and more.</p>
-      </div>
-      <div class="s-card">
-        <h3>Data Migration</h3>
-        <p>We import your existing Excel or paper records into Ledgr cleanly.</p>
-      </div>
-      <div class="s-card">
-        <h3>Training & Onboarding</h3>
-        <p>Remote or on-site sessions to get your staff productive in a day.</p>
-      </div>
-      <div class="s-card">
-        <h3>Custom Reports</h3>
-        <p>Bespoke Excel/PDF templates matching your tax or audit format.</p>
-      </div>
-    </div>
-    <div class="center-cta">
-      <a href="services.html" class="btn btn-ghost">Learn more →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DOWNLOAD CTA ============ -->
-<section class="cta-section">
-  <div class="container cta-inner">
-    <div>
-      <h2>Ready to take control of your finances?</h2>
-      <p>Download Ledgr today. Free, offline, and private — forever.</p>
-    </div>
-    <div class="cta-buttons">
-      <a href="download.html" class="btn btn-white">Download App</a>
-      <a href="support.html" class="btn btn-outline-white">Get Support</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav-wrap">
+    <nav class="nav container">
       <a href="index.html" class="brand">
         <span class="brand-logo">L</span>
-        <span class="brand-text"><strong>Ledgr</strong><small>by Ashfaq Ali Zardari Store</small></span>
+        <span class="brand-text">
+          <strong>Ledgr</strong>
+          <small>by Ashfaq Ali Zardari Store</small>
+        </span>
       </a>
-      <p class="footer-desc">A modern, offline-first finance ledger for shops and small businesses.</p>
-      <div class="socials">
-        <a href="https://ashfaqalizardaristore.co" target="_blank" aria-label="Website">🌐</a>
-        <a href="mailto:info@ashfaqalizardaristore.co" aria-label="Email">✉️</a>
-        <a href="tel:+923308060604" aria-label="Phone">📞</a>
+
+      <button class="menu-btn" aria-label="Menu" id="menuBtn">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="screenshots.html">Screenshots</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="download.html" class="btn-nav">Download</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor"
+                d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0-16a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1Zm0 18a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1ZM2 12a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm18 0a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1ZM4.9 4.9a1 1 0 0 1 1.4 0L7.8 6.4a1 1 0 1 1-1.4 1.4L4.9 6.3a1 1 0 0 1 0-1.4Zm11.3 11.3a1 1 0 0 1 1.4 0l1.5 1.5a1 1 0 1 1-1.4 1.4l-1.5-1.5a1 1 0 0 1 0-1.4Zm2.9-11.3a1 1 0 0 1 0 1.4L17.6 7.8a1 1 0 1 1-1.4-1.4l1.5-1.5a1 1 0 0 1 1.4 0ZM6.4 16.2a1 1 0 0 1 0 1.4l-1.5 1.5a1 1 0 0 1-1.4-1.4l1.5-1.5a1 1 0 0 1 1.4 0Z" />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="pill">
+          <span class="dot"></span>
+          Available on Google Play
+        </span>
+        <h1>
+          Offline finance management,
+          <span class="grad-text">reimagined.</span>
+        </h1>
+        <p class="lede">
+          Ledgr is a fast, private, and beautifully designed finance ledger for individuals,
+          shops, and businesses. Track credits and debits across multiple accounts — with
+          automatic running balance, transfer support, and one-tap export to Excel, CSV, or PDF.
+        </p>
+
+        <div class="hero-cta">
+          <a href="download.html" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor"
+                d="M3 20.5v-17c0-.6.4-1 1-1 .2 0 .4.1.5.2l14.7 8.5c.5.3.7.9.4 1.4-.1.2-.2.3-.4.4L4.5 21.3c-.5.3-1.1.1-1.4-.4-.1-.1-.1-.3-.1-.4Zm2-14.7v12.4L16.2 12 5 5.8Z" />
+            </svg>
+            Download for Android
+          </a>
+          <a href="features.html" class="btn btn-ghost">Explore Features →</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>100%</strong><span>Offline</span></div>
+          <div><strong>3+</strong><span>Export formats</span></div>
+          <div><strong>∞</strong><span>Accounts</span></div>
+          <div><strong>0</strong><span>Ads & trackers</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="mock-header">
+              <span>Welcome back</span>
+              <strong>My Store</strong>
+            </div>
+            <div class="mock-card">
+              <small>Main Account</small>
+              <strong>Rs 145,250.00</strong>
+              <div class="mock-bar"><span></span></div>
+              <div class="mock-mini">
+                <div><span class="up">▲</span> Credit</div>
+                <div><span class="down">▼</span> Debit</div>
+              </div>
+            </div>
+            <div class="mock-txn credit">
+              <div class="ico">↓</div>
+              <div>
+                <strong>Sale – Counter 1</strong>
+                <small>Today · 1 entry</small>
+              </div>
+              <span>+ Rs 5,000</span>
+            </div>
+            <div class="mock-txn debit">
+              <div class="ico">↑</div>
+              <div>
+                <strong>Supplier Payment</strong>
+                <small>Yesterday · 2 entries</small>
+              </div>
+              <span>− Rs 12,400</span>
+            </div>
+            <div class="mock-txn transfer">
+              <div class="ico">⇄</div>
+              <div>
+                <strong>Transfer → JazzCash</strong>
+                <small>2 days ago</small>
+              </div>
+              <span>Rs 8,000</span>
+            </div>
+          </div>
+        </div>
+        <div class="float-card fc-1">
+          <span class="fc-icon">📊</span>
+          <div>
+            <strong>Monthly report</strong>
+            <small>Auto-generated</small>
+          </div>
+        </div>
+        <div class="float-card fc-2">
+          <span class="fc-icon">🔒</span>
+          <div>
+            <strong>Private by design</strong>
+            <small>Nothing leaves your device</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST BAR ============ -->
+  <section class="trust">
+    <div class="container">
+      <p class="trust-label">Trusted by shopkeepers, freelancers, and small businesses</p>
+      <div class="trust-logos">
+        <span>◆ Shops</span>
+        <span>◆ Freelancers</span>
+        <span>◆ Retailers</span>
+        <span>◆ Wholesalers</span>
+        <span>◆ Families</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Features</span>
+        <h2>Everything you need to run a clean ledger</h2>
+        <p>Purpose-built for real-world bookkeeping — no clutter, no learning curve.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="f-card">
+          <div class="f-icon" style="background:linear-gradient(135deg,#1A73E8,#7C4DFF)">👥</div>
+          <h3>Unlimited Accounts</h3>
+          <p>Create accounts for people, organizations, or companies. Manage them with full edit, archive, and delete
+            control.</p>
+        </article>
+
+        <article class="f-card">
+          <div class="f-icon" style="background:linear-gradient(135deg,#34A853,#00C853)">📈</div>
+          <h3>Running Balance</h3>
+          <p>Every entry stores the balance before and after. Trace any discrepancy in seconds.</p>
+        </article>
+
+        <article class="f-card">
+          <div class="f-icon" style="background:linear-gradient(135deg,#EA4335,#FF6D00)">⇄</div>
+          <h3>Transfers Between Accounts</h3>
+          <p>Move money like Easypaisa or JazzCash — one debit, one credit, atomic and accurate.</p>
+        </article>
+
+        <article class="f-card">
+          <div class="f-icon" style="background:linear-gradient(135deg,#00B8D4,#00E5FF)">📄</div>
+          <h3>Excel, CSV & PDF Export</h3>
+          <p>Generate statements and reports in one tap. Share via WhatsApp, email, or save to device.</p>
+        </article>
+
+        <article class="f-card">
+          <div class="f-icon" style="background:linear-gradient(135deg,#7C4DFF,#E040FB)">🔒</div>
+          <h3>Local & Private</h3>
+          <p>No cloud, no signup, no tracking. Your financial data never leaves your device.</p>
+        </article>
+
+        <article class="f-card">
+          <div class="f-icon" style="background:linear-gradient(135deg,#F57F17,#FFC107)">🎨</div>
+          <h3>Multi-Language & Themes</h3>
+          <p>English, اردو, العربية. Light, dark, or system — the app adapts to you.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCREENSHOTS PREVIEW ============ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Preview</span>
+        <h2>A UI you'll actually enjoy using</h2>
+        <p>Modern, uncluttered, and built for quick data entry.</p>
+      </div>
+
+      <div class="shots">
+        <div class="shot">
+          <img src="./images/2_Home.jpeg" style="border-radius: 30px;" alt="Home Screen" class="shot-inner" />
+          <div class="shot-inner mock-1">
+            Dashboard</div>
+        </div>
+        <div class="shot shot-center">
+          <img src="./images/7_NewTransaction.jpeg" style="border-radius: 30px;" alt="New Transaction Screen"
+            class="shot-inner" />
+          <div class="shot-inner mock-2">New Transaction</div>
+        </div>
+        <div class="shot">
+          <img src="./images/5_Reports.jpeg" style="border-radius: 30px;" alt="Reports Screen" class="shot-inner" />
+          <div class="shot-inner mock-3">Reports</div>
+        </div>
+      </div>
+
+      <div class="center-cta">
+        <a href="screenshots.html" class="btn btn-ghost">View all screenshots →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Services</span>
+        <h2>Built by a store, for stores</h2>
+        <p>Beyond the app — we help you get your bookkeeping in order.</p>
+      </div>
+
+      <div class="service-grid">
+        <div class="s-card">
+          <h3>Custom App Development</h3>
+          <p>Flutter apps for your business — POS, inventory, ledgers, and more.</p>
+        </div>
+        <div class="s-card">
+          <h3>Data Migration</h3>
+          <p>We import your existing Excel or paper records into Ledgr cleanly.</p>
+        </div>
+        <div class="s-card">
+          <h3>Training & Onboarding</h3>
+          <p>Remote or on-site sessions to get your staff productive in a day.</p>
+        </div>
+        <div class="s-card">
+          <h3>Custom Reports</h3>
+          <p>Bespoke Excel/PDF templates matching your tax or audit format.</p>
+        </div>
+      </div>
+      <div class="center-cta">
+        <a href="services.html" class="btn btn-ghost">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DOWNLOAD CTA ============ -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <div>
+        <h2>Ready to take control of your finances?</h2>
+        <p>Download Ledgr today. Free, offline, and private — forever.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="download.html" class="btn btn-white">Download App</a>
+        <a href="support.html" class="btn btn-outline-white">Get Support</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand">
+          <span class="brand-logo">L</span>
+          <span class="brand-text"><strong>Ledgr</strong><small>by Ashfaq Ali Zardari Store</small></span>
+        </a>
+        <p class="footer-desc">A modern, offline-first finance ledger for shops and small businesses.</p>
+        <div class="socials">
+          <a href="https://ashfaqalizardaristore.co" target="_blank" aria-label="Website">🌐</a>
+          <a href="mailto:info@ashfaqalizardaristore.co" aria-label="Email">✉️</a>
+          <a href="tel:+923308060604" aria-label="Phone">📞</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="screenshots.html">Screenshots</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Get in touch</h4>
+        <ul class="contact-list">
+          <li><a href="tel:+923308060604">📞 +92 330 8060604</a></li>
+          <li><a href="mailto:info@ashfaqalizardaristore.co">✉️ info@ashfaqalizardaristore.co</a></li>
+          <li><a href="https://ashfaqalizardaristore.co" target="_blank">🌐 ashfaqalizardaristore.co</a></li>
+        </ul>
       </div>
     </div>
 
-    <div>
-      <h4>Product</h4>
-      <ul>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="screenshots.html">Screenshots</a></li>
-        <li><a href="download.html">Download</a></li>
-        <li><a href="services.html">Services</a></li>
-      </ul>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Ashfaq Ali Zardari Store. All rights reserved.</p>
+      <p>Made with ❤️ in Pakistan</p>
     </div>
+  </footer>
 
-    <div>
-      <h4>Company</h4>
-      <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms & Conditions</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <h4>Get in touch</h4>
-      <ul class="contact-list">
-        <li><a href="tel:+923308060604">📞 +92 330 8060604</a></li>
-        <li><a href="mailto:info@ashfaqalizardaristore.co">✉️ info@ashfaqalizardaristore.co</a></li>
-        <li><a href="https://ashfaqalizardaristore.co" target="_blank">🌐 ashfaqalizardaristore.co</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="container footer-bottom">
-    <p>© <span id="year"></span> Ashfaq Ali Zardari Store. All rights reserved.</p>
-    <p>Made with ❤️ in Pakistan</p>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
